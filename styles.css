@@ -9,7 +9,7 @@ body{
     display: grid;
     place-items: center;
     font-family: Epilogue;
-    background-color: #FAF8F6;
+    background-color: #f2f2f2;
     position: relative;
 }
 .container{
@@ -284,14 +284,14 @@ ul{
         .secondcontainer{ max-width:600px; height: 865px; position:absolute;}
         .image-jeremy{ display:block;}
         .message{justify-content: center; place-content: center; display:block}
-    
+
     }
 
 }
 
 @media only screen and (min-width: 320px){
     .container{ min-width: 320px;}
-    .indicators{ display: block; flex-direction: column;}
+    .indicators{ display: block; flex-direction: row;}
     .imghero{
         display:block; place-items: center; 
     }
