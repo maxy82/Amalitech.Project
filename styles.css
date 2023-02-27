@@ -123,6 +123,9 @@ strong{
     right: 475px;
     z-index: 0;
 }
+.button1:hover, .button2:hover{
+    color: yellow;
+}
 .indicators{
     width: 195px;
     height: 375px;
