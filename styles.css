@@ -12,10 +12,6 @@ body{
     background-color: #f2f2f2;
     position: relative;
 }
-.container{
-    margin: 16px;
-    max-width: 400px;
-}
 header{
     display: flex;
     justify-content: space-between;
@@ -23,7 +19,7 @@ header{
     position: absolute;
     width: 1108.85px;
     height: 56px;
-    left: 166.15px;
+    left: 166px;
     top: 50px;
 }
 button{
@@ -47,17 +43,15 @@ button{
 .secondcontainer{
     width: 1110px;
     height: 600px;
-    left: 141px;
-    top: 187px;
-    position: absolute;
+    left: 166px;
+    top: 248px;
     display: flex;
 }
 .textbox{
     width: 635px;
     height: 405px;
-    margin-top: 60.32px;
     left: 141px;
-    top: 60.32px;
+    top: 315px;
     margin-right: 192px;
     position: absolute;
     z-index: 1;
@@ -108,8 +102,8 @@ strong{
     margin-top: 52px;
 }
 .concaveline{
-    left: 317px;
-    top: 45.68px;
+    left: 455px;
+    top: 218px;
     position: absolute;
     color: #172339;
     z-index: 1;
@@ -123,8 +117,12 @@ strong{
     right: 475px;
     z-index: 0;
 }
-.button1:hover, .button2:hover{
-    color: yellow;
+.button1:hover{
+    background-color: #172339;
+    color: #FAF8F6;
+}
+.button2:hover{
+    background-image:linear-gradient(135deg, #A060FF 0%, #CB30E3 49.21%, #FFA84E 100%);
 }
 .indicators{
     width: 195px;
@@ -156,9 +154,10 @@ strong{
 .thirdcontainer{
     width: 1109px;
     height: 589.56px;
-    left: 188px;
-    top: 957px;
+    left: 140px;
+    top: 917px;
     position: absolute;
+    z-index: 1;
 }
 .messagebox{
     width: 1109px;
@@ -248,12 +247,23 @@ h5{
     height: 26px;
 
 }
-footer{
+.footerContainer{
+    width: 1440px;
+    height: 464px;
+    top: 1252px;
+    z-index: 0;
+    left: 0px;
+    position: absolute;
+}
+.footerContainer:hover{
+    background-color: #F3EDE7;
+}
+.footer{
+    position: absolute;
     width: 1109px;
     height:32px;
-    position: absolute;
-    left: 167px;
-    top: 1612px;
+    left: 140px;
+    top: 360px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -280,25 +290,92 @@ ul{
     letter-spacing: 0-08833333px;
     left: 491px;
 }
-@media only screen and (min-width: 768px){
-    .container{
-        min-width: 786px; width:689px; height:482px; left: 39px;
-        top: 176px; display: flex;}
-        
-        .secondcontainer{ max-width:600px; height: 865px; position:absolute;}
-        .image-jeremy{ display:block;}
-        .message{justify-content: center; place-content: center; display:block}
+@media screen and (max-width: 768px){
+    body{
+        background-color: #FAF8F6;
+        margin: 0px;
     }
+    header{
+        left: 39px;
+        top: 40px;
+        width: 689px;
+        height: 56px;
+        right: 40px;
+    }
+    .secondcontainer{
+        left: 39px;
+        width: 689px;
+        height: 482px;
+        top: 176px;
 
-
-
-@media only screen and (min-width: 320px){
-    .container{ min-width: 320px;}
-    .indicators{ display: block; flex-direction: row;}
+    }
+    .indicators{
+        display: flex;
+        flex-direction: row;
+        left: 39px;
+        top: 800px;
+        align-items: center;
+        justify-items:space-between;
+        place-items: center;
+        width: 689px;
+        height: 83px;
+    }
+    .thirdcontainer{
+        width: 689px;
+        height: 865px;
+        left: 39px;
+        top: 921px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+    .message{
+        width: 573px;
+        height: 282px;
+        left: 97px;
+        top: 338px;
+        justify-items: center;
+        position: absolute;
+    }
     .imghero{
-        display:block; place-items: center; 
+        left: 447px;
+        top: 176px;
+        width: 281px;
+        height: 482px;
     }
-    .thirdcontainer{ display: block; align-items: center; min-width: 320px;}
-    .image-jeremy{ display: block; justify-content: center; place-items: center;}
-    footer{ display: block; justify-content: center; place-items: center; }
+    .image-jeremy{
+        justify-self: center;
+        top: -181px;
+        left: 270px;
+    }
+    .convexline{
+        width: 49.27px;
+        height: 40px;
+        left: 408.27px;
+        top: 261px;
+    }
+    .messagebox{
+        width: 689px;
+        height: 684px;
+        top: 338px;
+    }
+    .footer{
+        width: 689px;
+        height: 32px;
+        left: 39px;
+        top: 800px;
+        right: 40px;
+    }
+}
+
+
+
+@media screen and (max-width: 375px){
+    body{background-color: #FAF8F6;} header{width: 343px; height: 48px; left: 16px; top: 24px;} .textbox{
+        width: 343.3px; height: 325.32px; left: 15.5px; top: 128px;
+    } .imghero{width: 343px; height: 240px; left: 16px; top: 709px;} .indicators{width: 344px; height: 313px; left: 15px;
+    display: flex; flex-direction: column; top: 1500px;} .thirdcontainer{
+        width: 573px; height: 929px; left: -99px; top: 1800px;
+    } .messagebox{ width: 375px; height: 748px; left: 99px; top: 181px;} .footer{width: 125px;height: 150px; left: 124.5px;
+    display: flex; flex-direction: column; top: 2100px;}
 }
